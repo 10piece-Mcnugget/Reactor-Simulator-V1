@@ -1,0 +1,32 @@
+{
+  "reactor_name": "EBR-1",
+  "max_power_mw": 1.4,
+  "rod_step_pct": 2,
+  "coolant_step_pct":5,
+  "max_safe_reactivity": 1.0,
+
+  "initial_state": {
+    "rod_position_pct": 10,
+    "coolant_flow_pct": 50,
+    "coolant_temp_c": 250,
+    "power_mw": 1.15
+  },
+
+  "reference_temp_c": 250,
+  "boiling_temp_c": 900,
+
+  "coefficients": {
+    "rod_worth": 0.02,
+    "heat_generation":0.7142857143,
+    "temperature_feedback": -0.42,
+    "void_feedback": -0.05,
+    "coolant_heat_removal": 0.01,
+    "power_gain": 0.05,
+    "void_growth_rate": 0.01
+  },
+
+  "enabled_effects": {
+    "temperature_feedback": true,
+    "void_feedback": false
+  }
+}
